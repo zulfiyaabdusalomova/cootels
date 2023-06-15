@@ -1,0 +1,33 @@
+.CF {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    @include padding;
+
+    &__cabin {
+        @include flex;
+        gap: 12.6rem;
+    }
+    &__info {
+        width: 65%;
+
+        h2 {
+            @include font_1(3.6rem, 600, 5.4rem);
+        }
+
+        p {
+            @include pragraph_m;
+            @include font_1;
+            color: $secondary_color;
+        }
+    }
+
+    &__img {
+        width: 35%;
+    }
+
+    &__food {
+        @include flex;
+        gap: 12.6rem;
+    }
+}

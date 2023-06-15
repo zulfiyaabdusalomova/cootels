@@ -1,0 +1,36 @@
+.customer{
+    @include padding;
+    @include flex;
+    flex-direction: column;
+
+    h2{
+        @include font_h2;
+        margin-bottom: 6.2rem;
+    }
+    p{
+        @include font_1;
+        margin-bottom: 4rem;
+        margin-top: 4.4rem;
+    }
+    h4{
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 3rem;
+    }
+    &__bottom{
+        @include flex;
+        gap: 1rem;
+        margin-top: 2.4rem;
+
+        div{
+            width: 3rem;
+            height: 3rem;
+            background-color: #FAB047;
+            border: 0.6rem solid white;
+            border-radius: 50%;
+        }
+        div:hover{
+            border-color: #FAB047;
+        }
+    }
+}

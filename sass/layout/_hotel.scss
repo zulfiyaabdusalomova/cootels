@@ -1,0 +1,23 @@
+.hotel{
+    @include flex;
+    @include padding;
+    &__img{
+        width: 35%;
+        margin-right: 12.6rem;
+    }
+    &__info{
+        width: 65%;
+        h2 {
+            @include font_1(3.6rem, 600, 5.4rem);
+        }
+        p {
+            @include pragraph_m;
+            @include font_1;
+            color: $secondary_color;
+        }
+        button{
+            @include btn;
+            @include font_2;
+        }
+    }
+}
